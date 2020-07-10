@@ -19,4 +19,8 @@ struct Card: Hashable {
         
         return identifierFactory
     }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(identifier)
+    }
 }

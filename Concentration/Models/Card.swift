@@ -23,4 +23,9 @@ struct Card: Hashable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(identifier)
     }
+    
+    static func ==(lhs: Card, rhs: Card) -> Bool {
+        return lhs.identifier == rhs.identifier
+    }
+    
 }

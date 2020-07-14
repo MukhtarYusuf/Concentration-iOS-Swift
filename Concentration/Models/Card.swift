@@ -28,4 +28,7 @@ struct Card: Hashable {
         return lhs.identifier == rhs.identifier
     }
     
+    init() {
+        self.identifier = Card.getUniqueIdentifier()
+    }
 }

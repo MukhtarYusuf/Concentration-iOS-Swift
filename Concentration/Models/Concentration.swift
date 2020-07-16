@@ -11,3 +11,9 @@ import Foundation
 struct Concentration {
     private(set) var cards = [Card]()
 }
+
+extension Collection {
+    var oneAndOnly: Element? {
+        return count == 1 ? first : nil
+    }
+}

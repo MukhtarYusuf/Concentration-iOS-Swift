@@ -32,6 +32,16 @@ struct Concentration {
             }
         }
     }
+    
+    init(numberOfPairsOfCards: Int) {
+        assert(numberOfPairsOfCards > 0, "Concentration.init(\(numberOfPairsOfCards)): You Must Have at Least one Pair of Cards")
+        
+        for _ in 1 ... numberOfPairsOfCards {
+            let card = Card()
+            cards += [card, card]
+        }
+        // TODO: Shuffle the cards
+    }
 }
 
 extension Collection {

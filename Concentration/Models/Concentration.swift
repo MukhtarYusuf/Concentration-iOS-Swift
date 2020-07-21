@@ -33,6 +33,22 @@ struct Concentration {
         }
     }
     
+    mutating func chooseCard(at index: Int) {
+        assert(cards.indices.contains(index), "Concentration.chooseCard(at: \(index)): Chosen Index Not in the Cards")
+        
+        if !cards[index].isMatched {
+            if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
+                if cards[matchIndex] == cards[index] {
+                    cards[matchIndex].isMatched = true
+                    cards[index].isMatched = true
+                }
+                cards[index].isFaceUp = true
+            } else {
+                indexOfOneAndOnlyFaceUpCard = index
+            }
+        }
+    }
+    
     init(numberOfPairsOfCards: Int) {
         assert(numberOfPairsOfCards > 0, "Concentration.init(\(numberOfPairsOfCards)): You Must Have at Least one Pair of Cards")
         

@@ -9,6 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // MARK: Outlets
+    @IBOutlet private weak var flipCountLabel: UILabel! {
+        didSet {
+        }
+    }
+    @IBOutlet private var cardButtons: [UIButton]!
     // MARK: ViewController LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     // MARK: Outlets
     @IBOutlet private weak var flipCountLabel: UILabel! {
         didSet {
+            updateFlipCountLabel()
         }
     }
     @IBOutlet private var cardButtons: [UIButton]!

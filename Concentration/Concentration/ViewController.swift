@@ -18,6 +18,22 @@ class ViewController: UIViewController {
     }
     @IBOutlet private var cardButtons: [UIButton]!
     
+    // MARK: Variables
+    private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
+    private(set) var flipCount = 0 {
+        didSet {
+            updateFlipCountLabel()
+        }
+    }
+    var numberOfPairsOfCards: Int {
+        get {
+            return (cardButtons.count + 1) / 2
+        }
+    }
+//    private var emojiChoices = ["🦇", "😱", "🙀", "😈", "🎃", "👻", "🍭", "🍬", "🍎"]
+    private var emojiChoices = "🦇, 😱, 🙀, 😈, 🎃, 👻, 🍭, 🍬, 🍎"
+    private var emoji = [Card : String]()
+    
     private func updateFlipCountLabel() {
         let attributes: [NSAttributedString.Key : Any] = [
             .strokeWidth : 5.0,

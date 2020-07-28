@@ -42,6 +42,17 @@ class ViewController: UIViewController {
         let attributedString = NSAttributedString(string: "Flips: \(flipCount)", attributes: attributes)
         flipCountLabel.attributedText = attributedString
     }
+    
+    func emoji(for card: Card) -> String {
+        if emoji[card] == nil, emojiChoices.count > 0 {
+            let randomIndex = emojiChoices.count.arc4random
+            let randomStringIndex = emojiChoices.index(emojiChoices.startIndex, offsetBy: randomIndex)
+            emoji[card] = String(emojiChoices.remove(at: randomStringIndex))
+        }
+        
+        return emoji[card] ?? "?"
+    }
+    
     // MARK: ViewController LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()

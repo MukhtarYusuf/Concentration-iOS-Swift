@@ -34,6 +34,17 @@ class ViewController: UIViewController {
     private var emojiChoices = "🦇, 😱, 🙀, 😈, 🎃, 👻, 🍭, 🍬, 🍎"
     private var emoji = [Card : String]()
     
+    // MARK: IBActions
+    @IBAction private func touchCard(_ sender: UIButton) {
+        flipCount += 1
+        if let cardNumber = cardButtons.firstIndex(of: sender) {
+            game.chooseCard(at: cardNumber)
+            updateViewFromModel()
+        } else {
+            
+        }
+    }
+    
     // MARK: Methods
     private func updateViewFromModel() {
         for index in cardButtons.indices {

@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		147D3A7F24B79A4B0047932D /* ConcentrationThemeCooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D3A7E24B79A4B0047932D /* ConcentrationThemeCooserViewController.swift */; };
 		14914F0E24ABBE4A0093518D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14914F0D24ABBE4A0093518D /* AppDelegate.swift */; };
 		14914F1024ABBE4A0093518D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14914F0F24ABBE4A0093518D /* SceneDelegate.swift */; };
-		14914F1224ABBE4A0093518D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14914F1124ABBE4A0093518D /* ViewController.swift */; };
+		14914F1224ABBE4A0093518D /* ConcentrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14914F1124ABBE4A0093518D /* ConcentrationViewController.swift */; };
 		14914F1524ABBE4A0093518D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14914F1324ABBE4A0093518D /* Main.storyboard */; };
 		14914F1724ABBE510093518D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14914F1624ABBE510093518D /* Assets.xcassets */; };
 		14914F1A24ABBE510093518D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14914F1824ABBE510093518D /* LaunchScreen.storyboard */; };
@@ -37,10 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		147D3A7E24B79A4B0047932D /* ConcentrationThemeCooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationThemeCooserViewController.swift; sourceTree = "<group>"; };
 		14914F0A24ABBE4A0093518D /* Concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14914F0D24ABBE4A0093518D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14914F0F24ABBE4A0093518D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		14914F1124ABBE4A0093518D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14914F1124ABBE4A0093518D /* ConcentrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationViewController.swift; sourceTree = "<group>"; };
 		14914F1424ABBE4A0093518D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14914F1624ABBE510093518D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14914F1924ABBE510093518D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,8 +108,9 @@
 				14914F3F24AD0B9A0093518D /* Models */,
 				14914F0D24ABBE4A0093518D /* AppDelegate.swift */,
 				14914F0F24ABBE4A0093518D /* SceneDelegate.swift */,
-				14914F1124ABBE4A0093518D /* ViewController.swift */,
+				14914F1124ABBE4A0093518D /* ConcentrationViewController.swift */,
 				14914F1324ABBE4A0093518D /* Main.storyboard */,
+				147D3A7E24B79A4B0047932D /* ConcentrationThemeCooserViewController.swift */,
 				14914F1624ABBE510093518D /* Assets.xcassets */,
 				14914F1824ABBE510093518D /* LaunchScreen.storyboard */,
 				14914F1B24ABBE510093518D /* Info.plist */,
@@ -274,7 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14914F1224ABBE4A0093518D /* ViewController.swift in Sources */,
+				14914F1224ABBE4A0093518D /* ConcentrationViewController.swift in Sources */,
+				147D3A7F24B79A4B0047932D /* ConcentrationThemeCooserViewController.swift in Sources */,
 				14914F3E24AD0B8E0093518D /* Concentration.swift in Sources */,
 				14914F4324AD0C500093518D /* Card.swift in Sources */,
 				14914F0E24ABBE4A0093518D /* AppDelegate.swift in Sources */,

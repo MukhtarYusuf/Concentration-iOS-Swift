@@ -19,6 +19,9 @@ class ConcentrationViewController: UIViewController {
     @IBOutlet private var cardButtons: [UIButton]!
     
     // MARK: Variables
+    private var visibleCardButtons: [UIButton]! {
+        return cardButtons?.filter { !$0.superview!.isHidden }
+    }
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
     private(set) var flipCount = 0 {
         didSet {

@@ -22,6 +22,13 @@ class ConcentrationViewController: UIViewController {
     private var visibleCardButtons: [UIButton]! {
         return cardButtons?.filter { !$0.superview!.isHidden }
     }
+    var theme: String? {
+        didSet {
+            emojiChoices = theme ?? ""
+            emoji = [:]
+            updateViewFromModel()
+        }
+    }
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
     private(set) var flipCount = 0 {
         didSet {

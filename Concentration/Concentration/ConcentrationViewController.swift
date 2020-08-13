@@ -100,6 +100,11 @@ class ConcentrationViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        updateViewFromModel()
+    }
+    
 extension Int {
     var arc4random: Int {
         if self > 0 {

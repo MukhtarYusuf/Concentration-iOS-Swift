@@ -105,6 +105,13 @@ class ConcentrationViewController: UIViewController {
         updateViewFromModel()
     }
     
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super .traitCollectionDidChange(previousTraitCollection)
+        updateFlipCountLabel()
+    }
+    
+}
+
 extension Int {
     var arc4random: Int {
         if self > 0 {

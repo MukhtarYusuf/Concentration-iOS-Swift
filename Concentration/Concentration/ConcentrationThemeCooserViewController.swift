@@ -9,4 +9,13 @@
 import UIKit
 
 class ConcentrationThemeCooserViewController: UIViewController, UISplitViewControllerDelegate {
+    private var splitViewDetailConcentrationViewController: ConcentrationViewController? {
+        return splitViewController?.viewControllers.last as? ConcentrationViewController
+    }
+    private var lastSeguedToConcentrationViewController: ConcentrationViewController?
+    let themes = [
+        "Sports" : "⚽️🏀🏈⚾️🎾🏐🏉🎱🏓⛷🎳⛳️",
+        "Animals" : "🐶🐔🦊🐼🦀🐪🐓🐋🐙🦄🐵",
+        "Faces" : "😀😂😎😫😰😴🙄🤔😘😷"
+    ]
 }

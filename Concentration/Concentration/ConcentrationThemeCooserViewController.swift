@@ -13,6 +13,17 @@ class ConcentrationThemeCooserViewController: UIViewController, UISplitViewContr
         return splitViewController?.viewControllers.last as? ConcentrationViewController
     }
     private var lastSeguedToConcentrationViewController: ConcentrationViewController?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    
+    override func awakeFromNib() {
+        splitViewController?.delegate = self
+    }
+    
     let themes = [
         "Sports" : "⚽️🏀🏈⚾️🎾🏐🏉🎱🏓⛷🎳⛳️",
         "Animals" : "🐶🐔🦊🐼🦀🐪🐓🐋🐙🦄🐵",

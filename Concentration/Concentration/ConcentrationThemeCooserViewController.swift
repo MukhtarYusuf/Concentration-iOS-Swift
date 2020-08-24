@@ -40,4 +40,20 @@ class ConcentrationThemeCooserViewController: UIViewController, UISplitViewContr
         "Animals" : "🐶🐔🦊🐼🦀🐪🐓🐋🐙🦄🐵",
         "Faces" : "😀😂😎😫😰😴🙄🤔😘😷"
     ]
+    
+    @IBAction func changeTheme(_ sender: Any) {
+        if let cvc = splitViewDetailConcentrationViewController {
+            if let themeName = (sender as? UIButton)?.currentTitle, let theme = themes[themeName] {
+                cvc.theme = theme
+            }
+        } else if let cvc = lastSeguedToConcentrationViewController {
+            if let themeName = (sender as? UIButton)?.currentTitle, let theme = themes[themeName] {
+                cvc.theme = theme
+            }
+            navigationController?.pushViewController(cvc, animated: true)
+        } else {
+            performSegue(withIdentifier: "Choose Theme", sender: sender)
+        }
+    }
+    
 }
